@@ -61,7 +61,7 @@ function Home() {
       </form>
       <div id='append'>
         <h4>{title}</h4>
-        <p>{text}</p>
+        <p><a href={text} target='_blank'>{text}</a></p>
       </div>
     </div>
   </>
