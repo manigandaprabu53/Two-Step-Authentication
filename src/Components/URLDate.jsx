@@ -34,7 +34,7 @@ function URLDate() {
   return <>
     <TopBar/>
     <div className="cal-wrapper">
-      <h1>Get Data By Month</h1>
+      <h1>Get Data By Day</h1>
       <form>
         <div className="form-group">
           <label htmlFor="cal">Select Date: </label>
