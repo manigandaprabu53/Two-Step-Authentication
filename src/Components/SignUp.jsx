@@ -28,7 +28,7 @@ function SignUp() {
       try {
           let response = await api.post(ApiRoutes.SignUp.path, values, {authenticate: ApiRoutes.SignUp.authenticate});
           toast.success(response.message);
-          navigate('/home');
+          navigate('/login');
       } catch (error) {
           toast.error(error.response.data.message) || "Error Occured! Please Try Again"
       }
