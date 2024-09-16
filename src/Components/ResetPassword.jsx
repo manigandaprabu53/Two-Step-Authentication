@@ -21,7 +21,7 @@ function ResetPassword() {
   const handlepassword = async(values)=>{
     try {
       console.log(values)
-      let response = await axios.post(`http://localhost:8000/users/resetPassword/${token}`, values);
+      let response = await axios.post(`https://two-step-authentication-backend.onrender.com/${token}`, values);
       toast.success(response.data.message);
       console.log(response)
       navigate('/login')
